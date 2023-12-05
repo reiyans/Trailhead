@@ -1,0 +1,1 @@
+この単元の Challenge では、SFDX プロジェクト & Lightning Web コンポーネントを作成し、Trailhead Playground にデプロイした。本ディレクトリ内の lwc ディレクトリは合格した際のディレクトリのコピー。
