@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <template if:true={contacts.data}>
+            <!--
+                基本コンポーネントは lightning-datatalble　
+                contacts プロパティに保存された Apex メソッド 'getContacts' の結果（レコード）は contacts.data でアクセス可能
+            -->
+            <lightning-datatable
+                key-field="Id"
+                data={contacts.data}
+                columns={columns}
+            >
+           </lightning-datatable>
+        </template>
+        <template if:true={errors}>
+            <p>{errors}</p>
+        </template>
+    </lightning-card>
+</template>
